@@ -8,7 +8,7 @@ const WeatherProvider = ({ children }) => {
   const [error, setError] = useState(null);
 
   const getWeatherData = async (city = 'Nashik') => {
-    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=475d12ef0f077248c8916ba3971a94aa&units=metric`;
+    const url = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=API_KEY&units=metric`;
 
     // try {
       const response = await axios.get(url);
