@@ -10,7 +10,7 @@ const WeatherNewsProvider = ({ children }) => {
   const getWeatherNews = async (city) => {
     if (!city) return;
 
-    const url = `https://newsapi.org/v2/everything?q=${city}+weather+forecast&apiKey=749d60163cca4d6baafddd0d465cffd0`;
+    const url = `https://newsapi.org/v2/everything?q=${city}+weather+forecast&apiKey=API_KEY`;
 
     try {
       const response = await axios.get(url);
